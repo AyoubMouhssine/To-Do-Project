@@ -113,8 +113,13 @@ header .container .log a {
 
 .welcome {
     padding-top: var(--padding-top);
-    /* border: 1px solid red; */
-/* height: 100vh; */
+    padding-bottom: var(--padding-bottom);
+    border: 1px solid red;
+    min-height: 100vh;
+
+    /* background-image: url('../imgs/agenda.png');
+    background-size: cover;
+    position: relative; */
 }
 
 .welcome .container {
