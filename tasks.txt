@@ -1,0 +1,9 @@
+1- change welcome section by adding (background-image - button 'get started')
+2- add hover to : navbar - buttons
+3- adjust colors
+5- make it responsive
+6- work on root by adding variables make it easy to change the look of the website
+
+4- optimize the code (remove repetitive things)
+
+7- POSITION FIXED TO THE HEADER !--almost done--!
