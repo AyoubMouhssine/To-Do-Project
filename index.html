@@ -4,36 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TO-DO | Task Manager</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/header_footer.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <title>To-Do | Task Manager</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div class="container">
-        <a href="#" class="logo">AYOUB TO_DO </a>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="log">
-          <a href="#">Sign up</a>
-          <a href="#">Login</a>
-        </div>
-      </div>
-    </header>
+    <div class="d-flex justify-content-center align-items-cente">
+      <div class="text-center">
+        <header>
+          <h1 class="display-3">To-Do</h1>
+          <p class="lead">Task Manager</p>
+        </header>
 
-    <div class="task">
-      <form action="" class="form">
-        <div class="container">
-          <input type="text" name="" id="" placeholder="Add Your Tasks Here" />
-          <input type="submit" name="" id="" value="Ajouter" />
-        </div>
-      </form>
+        <main>
+          <form id="taskForm" class="ajouter">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="ajouterInput"
+                placeholder="Add Your Tasks Here"
+              />
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                id="ajouterBtn"
+              >
+                Add
+              </button>
+            </div>
+          </form>
+          <form id="taskForm" class="update" style="display: none">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="updateInput"
+                placeholder="Add Your Tasks Here"
+              />
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                id="updateBtn"
+              >
+                Update
+              </button>
+            </div>
+          </form>
+
+          <table class="table table-striped mt-4">
+            <div class="task-counter fs-4 text-start mt-4">
+              <span id="taskCounter"></span> tasks
+            </div>
+            <thead>
+              <tr>
+                <th>Task Name</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </main>
+      </div>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
